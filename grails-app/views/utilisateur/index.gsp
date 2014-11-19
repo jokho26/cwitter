@@ -9,16 +9,29 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Liste des messages</title>
+    <title>${user.nom} ${user.prenom}</title>
 </head>
 
 <body>
-Nombre de messages : ${cwitter.Utilisateur.get(params.get("id")).messages.size()}
-<br><br>
-<ul>
-    <g:each var="message" in="${cwitter.Utilisateur.get(params.get("id")).messages}">
-        <li>${message.text}</li>
+    <b>${user.nom} ${user.prenom}</b>
+    <br><br>
+    Messages de l'utilisateur :
+    <br>
+    <ul>
+        <g:each var="message" in="${user.messages}">
+            <li>${message.text}</li>
+        </g:each>
+    </ul>
+    <br><br>
+    Les messages des utilisateurs dans les groupes possédés par l’utilisateur :
+    <br>
+
+    <g:each var="groupe" in="${user.groupes}">
+        <li>${groupe.nom}</li>
     </g:each>
-</ul>
+
+    <ul>
+        ${user.groupes.size()}
+    </ul>
 </body>
 </html>

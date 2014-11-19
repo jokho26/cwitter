@@ -7,6 +7,9 @@ class Utilisateur {
     String login
     String password
 
+    // Pour trier les messages
+    List messages
+
     static hasMany = [messages: Message, groupes:Groupe, utilisateursSuivis: Utilisateur, utilisateursSuiveurs: Utilisateur]
 
     static mappedBy = [groupes:"owner"]
