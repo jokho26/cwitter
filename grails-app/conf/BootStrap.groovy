@@ -31,7 +31,8 @@ class BootStrap {
         Groupe gUser2 = new Groupe(nom: "Groupe utilisateur 2", owner:u3).save()
         gUser2.addToUsers(u3)
         gUser2.addToUsers(u4)
-        gUser.addToUsers(admin)
+        gUser2.addToUsers(admin)
+
     }
     def destroy = {
     }
