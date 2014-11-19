@@ -19,17 +19,19 @@ class BootStrap {
             }
         }
 
-        Groupe gAdmin = new Groupe()
+        Groupe gAdmin = new Groupe(nom: "Groupe administrateur")
         admin.addToGroupes(gAdmin).save(flush: true, failOnError: true)
         gAdmin.addToUsers(admin)
 
-        Groupe gUser = new Groupe(owner:u1).save()
+        Groupe gUser = new Groupe(nom: "Groupe utilisateur 1", owner:admin).save()
         gUser.addToUsers(u1)
         gUser.addToUsers(u2)
+        gUser.addToUsers(admin)
 
-        Groupe gUser2 = new Groupe(owner:u3).save()
+        Groupe gUser2 = new Groupe(nom: "Groupe utilisateur 2", owner:u3).save()
         gUser2.addToUsers(u3)
         gUser2.addToUsers(u4)
+        gUser.addToUsers(admin)
     }
     def destroy = {
     }

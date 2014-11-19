@@ -22,16 +22,22 @@
             <li>${message.text}</li>
         </g:each>
     </ul>
-    <br><br>
-    Les messages des utilisateurs dans les groupes possédés par l’utilisateur :
-    <br>
+    <br><br><br>
 
+    Liste des utilisateurs dans les groupes possédés par ${user.nom} ${user.prenom}
     <g:each var="groupe" in="${user.groupes}">
-        <li>${groupe.nom}</li>
+        <ul>
+            <li>
+                <b>${groupe.nom}</b> : ${groupe.users.size()} membre(s)
+                <ul>
+                    <g:each var="membre" in="${groupe.users}">
+                        <li>${membre.nom} ${membre.prenom}</li>
+                    </g:each>
+                </ul>
+            </li>
+        </ul>
+        <br><br>
     </g:each>
 
-    <ul>
-        ${user.groupes.size()}
-    </ul>
 </body>
 </html>
