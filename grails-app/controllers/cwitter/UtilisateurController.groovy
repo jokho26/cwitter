@@ -2,5 +2,6 @@ package cwitter
 
 class UtilisateurController {
 
-    def index() { }
+    def index() {
+    }
 }

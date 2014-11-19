@@ -9,14 +9,15 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Liste des utilisateurs</title>
+    <title>Liste des messages</title>
 </head>
 
 <body>
-Nombre d'utilisateur : ${cwitter.Utilisateur.count}<br>
+Nombre de messages : ${cwitter.Utilisateur.get(params.get("id")).messages.size()}
+<br><br>
 <ul>
-    <g:each var="user" in="${cwitter.Utilisateur.all}">
-        <li>${user.nom} ${user.prenom} - <g:link controller="message" id="${user.id}">${user.messages.size()} message(s)</g:link></li>
+    <g:each var="message" in="${cwitter.Utilisateur.get(params.get("id")).messages}">
+        <li>${message.text}</li>
     </g:each>
 </ul>
 </body>
