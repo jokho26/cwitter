@@ -1,4 +1,3 @@
-import cwitter.Groupe
 import cwitter.Message
 import cwitter.Utilisateur
 
@@ -19,19 +18,27 @@ class BootStrap {
             }
         }
 
-        Groupe gAdmin = new Groupe(nom: "Groupe administrateur")
-        admin.addToGroupes(gAdmin).save(flush: true, failOnError: true)
-        gAdmin.addToUsers(admin)
 
-        Groupe gUser = new Groupe(nom: "Groupe utilisateur 1", owner:admin).save()
-        gUser.addToUsers(u1)
-        gUser.addToUsers(u2)
-        gUser.addToUsers(admin)
+        admin.addToUtilisateursSuiveurs(u1)
+        u1.addToUtilisateursSuivis(admin)
 
-        Groupe gUser2 = new Groupe(nom: "Groupe utilisateur 2", owner:u3).save()
-        gUser2.addToUsers(u3)
-        gUser2.addToUsers(u4)
-        gUser2.addToUsers(admin)
+        admin.addToUtilisateursSuiveurs(u2)
+        u2.addToUtilisateursSuivis(admin)
+
+        admin.addToUtilisateursSuivis(u3)
+        u3.addToUtilisateursSuiveurs(admin)
+
+        u1.addToUtilisateursSuiveurs(u2)
+        u2.addToUtilisateursSuivis(u1)
+
+        u2.addToUtilisateursSuiveurs(u1)
+        u1.addToUtilisateursSuivis(u2)
+
+        u4.addToUtilisateursSuiveurs(u3)
+        u3.addToUtilisateursSuivis(u4)
+
+        u3.addToUtilisateursSuiveurs(u2)
+        u2.addToUtilisateursSuivis(u3)
 
     }
     def destroy = {

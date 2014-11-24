@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Jokho
-  Date: 05/11/2014
-  Time: 14:25
---%>
-
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -23,42 +16,29 @@ Messages de l'utilisateur :
     </g:each>
 </ul>
 <br><br><br>
+Utilisateurs que vous suivez :
+<br>
+<ul>
+    <g:each var="u" in="${user.utilisateursSuivis}">
+        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}">${u.messages.size()} message(s)</g:link></li>
+    </g:each>
+</ul>
+<br><br><br>
+Utilisateurs qui vous suivent :
+<br>
+<ul>
+    <g:each var="u" in="${user.utilisateursSuiveurs}">
+        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}">${u.messages.size()} message(s)</g:link></li>
+    </g:each>
+</ul>
+<br><br><br>
+Suivre une nouvelle personne :
+<ul>
+    <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user)}">
+        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}">${u.messages.size()} message(s)</g:link></li>
+    </g:each>
+</ul>
 
-Les messages des utilisateurs dans les groupes possédés par ${user.nom} ${user.prenom}
-<g:each var="groupe" in="${user.groupes}">
-    <ul>
-        <li>
-            <b>${groupe.nom}</b> : ${groupe.users.size()} membre(s)
-            <ul>
-                <g:each var="membre" in="${groupe.users}">
-                    <g:each var="message" in="${membre.messages}">
-                        <li>${message.text}</li>
-                    </g:each>
-                </g:each>
-            </ul>
-        </li>
-    </ul>
-    <br><br>
-</g:each>
-
-
-Liste des utilisateurs dans les groupes possédés par ${user.nom} ${user.prenom}
-<g:each var="groupe" in="${user.groupes}">
-    <ul>
-        <li>
-            <b>${groupe.nom}</b> : ${groupe.users.size()} membre(s)
-            <ul>
-                <g:each var="membre" in="${groupe.users}">
-                    <li>${membre.nom} ${membre.prenom}</li>
-                </g:each>
-            </ul>
-        </li>
-    </ul>
-    <br><br>
-</g:each>
-
-
-Une liste de tous les messages (ceux de ${user.nom} ${user.prenom} et ceux des utilisateurs dans ses groupes) triés par ordre inverse de création :
 
 </body>
 </html>

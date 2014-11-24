@@ -10,9 +10,7 @@ class Utilisateur {
     // Pour trier les messages
     List messages
 
-    static hasMany = [messages: Message, groupes:Groupe, utilisateursSuivis: Utilisateur, utilisateursSuiveurs: Utilisateur]
-
-    static mappedBy = [groupes:"owner"]
+    static hasMany = [messages: Message, utilisateursSuivis: Utilisateur, utilisateursSuiveurs: Utilisateur]
 
     static constraints = {
 
