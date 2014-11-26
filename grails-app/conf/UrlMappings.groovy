@@ -14,5 +14,6 @@ class UrlMappings {
         "/listeDetaillee" (view:"/utilisateur/listeDetaillee")
         "/inscription" (view:"/utilisateur/inscription")
         "/connexion" (view:"/utilisateur/connexion")
+        "/mur" (view:"/utilisateur/mur")
 	}
 }

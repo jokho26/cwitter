@@ -1,5 +1,7 @@
 package cwitter
 
+import org.apache.commons.codec.digest.DigestUtils
+
 class UtilisateurController {
 
     def index() {
@@ -74,6 +76,21 @@ class UtilisateurController {
             return;
         }
 
-        Utilisateur user = Utilisateu
+        Utilisateur user = Utilisateur.findByLogin(login)
+
+        if(user == null){
+            redirect(uri: "/", params: [messageErreur: "Utilisateur inconnu."]);
+            return;
+        }
+
+        mdp = DigestUtils.shaHex(this.password);
+
+        if(mdp.equals(user.getPassword())){
+            session["utilisateur"] = user.getId();
+            session["estConnecte"] = true;
+            redirect(uri: "/mur", params: [messageErreur: "Connexion réussie."]);
+        }
+
+
     }
 }
