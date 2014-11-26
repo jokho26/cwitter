@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Cwitter.iml" filepath="$PROJECT_DIR$/Cwitter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Cwitter-grailsPlugins.iml" filepath="$PROJECT_DIR$/Cwitter-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cwitter.iml" filepath="$PROJECT_DIR$/cwitter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cwitter-grailsPlugins.iml" filepath="$PROJECT_DIR$/cwitter-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

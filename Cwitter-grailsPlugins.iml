@@ -12,9 +12,7 @@
     </facet>
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map>
-          <unit-entry name="Gorm" />
-        </datasource-map>
+        <datasource-map />
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -59,9 +57,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="grails-2.4.4" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.4.4 (2)" level="application" />
     <orderEntry type="module-library" exported="">
-      <library name="Grails User Library (Cwitter-grailsPlugins)">
+      <library name="Grails User Library (cwitter-grailsPlugins)">
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.17.1-GA/javassist-3.17.1-GA.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/2.0.5/liquibase-core-2.0.5.jar!/" />

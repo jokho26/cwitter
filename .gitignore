@@ -1,3 +1,4 @@
+.gitignore
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -13,5 +14,6 @@ hs_err_pid*
 *.log
 .idea/workspace.xml
 target/stacktrace.log
-target/stacktrace.log
+/target/*
 .idea/workspace.xml
+n23zoqwr.1t0.txt
