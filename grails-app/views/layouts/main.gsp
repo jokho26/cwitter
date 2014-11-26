@@ -56,7 +56,7 @@
         <ul class="sidebar-nav">
 
             <li>
-                <a href="#">C'est</a>
+                <g:link controller="utilisateur" action="inscription">Inscription</g:link>
             </li>
             <li>
                 <a href="#">Oune</a>
