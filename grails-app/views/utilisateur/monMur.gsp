@@ -34,7 +34,7 @@ Utilisateurs qui vous suivent :
 <br><br><br>
 Suivre une nouvelle personne :
 <ul>
-    <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user)}">
+    <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user.getId())}">
         <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" action="suivre" params="[idSuiveur: user.id, idSuivi:u.id]">+</g:link></li>
     </g:each>
 </ul>

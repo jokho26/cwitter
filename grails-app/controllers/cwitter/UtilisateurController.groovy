@@ -16,7 +16,8 @@ class UtilisateurController {
         ["user" : cwitter.Utilisateur.get(session["utilisateur"])]
     }
 
-    public static List<Utilisateur> getListeUtilisateursASuivre(Utilisateur utilisateurSuiveur) {
+    public static List<Utilisateur> getListeUtilisateursASuivre(int idUtilisateurSuiveur) {
+        Utilisateur utilisateurSuiveur = Utilisateur.get(idUtilisateurSuiveur);
         List<Utilisateur> listeUtilisateurASuivre = Utilisateur.getAll().clone();
         listeUtilisateurASuivre.removeAll(utilisateurSuiveur.getUtilisateursSuivis());
 
@@ -102,7 +103,7 @@ class UtilisateurController {
             session["utilisateur"] = user.getId();
             session["estConnecte"] = true;
 
-            redirect(action: "mur", controller: "utilisateur", params: [id: user.getId()]);
+            redirect(action: "monMur", controller: "utilisateur", params: [id: user.getId()]);
         }
         else {
             redirect(uri: "/", params: [messageErreur: "Mot de passe incorrect."]);
