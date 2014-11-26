@@ -15,4 +15,4 @@ hs_err_pid*
 target/stacktrace.log
 target/stacktrace.log
 
-target/
+/target/*
