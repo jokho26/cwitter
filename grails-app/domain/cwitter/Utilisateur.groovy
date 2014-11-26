@@ -16,7 +16,7 @@ class Utilisateur {
 
         nom blank: false, nullable: false
         prenom blank: false, nullable: false
-        login size: 5..15, blank: false, nullable: false
-        password size: 5..15, blank: false, nullable: false
+        login size: 1..15, blank: false, nullable: false
+        password size: 1..15, blank: false, nullable: false
     }
 }

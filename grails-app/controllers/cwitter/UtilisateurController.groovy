@@ -46,23 +46,20 @@ class UtilisateurController {
             prenom == null || prenom.equals("") ||
             mdp == null || mdp.equals("") ||
             login == null || login.equals("")) {
-            redirect(uri: "/utilisateur/connexion", params: [messageErreur: "Champs vide. Veuillez remplir tout le formulaire"]);
+            redirect(uri: "/inscription", params: [messageErreur: "Champs vide. Veuillez remplir tout le formulaire"]);
             return;
         }
 
         // Vérification si le login est déjà utilisé
-        if (Utilisateur.findByLogin(login) == null) {
-            redirect(uri: "/utilisateur/connexion", params: [messageErreur: "Login déjà utilisé. Veuillez en choisir un nouveau."]);
+        if (Utilisateur.findByLogin(login) != null) {
+            redirect(uri: "/inscription", params: [messageErreur: "Login déjà utilisé. Veuillez en choisir un nouveau."]);
             return;
         }
-
 
         // On créer l'utilisateur
         Utilisateur user = new Utilisateur(login: login, password: mdp, nom: nom, prenom: prenom).save(flush: true, failOnError: true)
 
-        System.out.println(user.getId());
-
-        // TODO rediriger vers son mur
+        // TODO connexion et rediriger vers son mur
         //redirect( action: "index", params: [id: params.get(user.getId())])
     }
 }
