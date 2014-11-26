@@ -9,11 +9,10 @@ class UrlMappings {
 
         "500"(view:'/error')
 
-        "/"(view:"/utilisateur/listeUser")
+        "/"(view:"/utilisateur/index")
         "/home_user/$id" (controller: 'utilisateur', action: 'index')
-        "/listeDetaillee" (view:"/utilisateur/listeDetaillee")
         "/inscription" (view:"/utilisateur/inscription")
-        "/connexion" (view:"/utilisateur/connexion")
         "/mur" (view:"/utilisateur/mur")
+        "/utilisateur/listeUser" (view:"/utilisateur/listeUser")
 	}
 }
