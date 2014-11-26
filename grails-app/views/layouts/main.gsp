@@ -34,14 +34,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <g:form name="formConnexion" class="navbar-form navbar-right" url="[action:'connection',controller:'utilisateur']">
+            <g:if test="${!session["estConnecte"]}">
+                <g:form name="formConnexion" class="navbar-form navbar-right" url="[action:'connection',controller:'utilisateur']">
 
-                <div class="form-group">
-                    <input type="text" name="login" class="form-control" placeholder="Login">&nbsp;&nbsp;
-                    <input type="password" name="mdp" class="form-control" placeholder="Mot de passe">
-                </div>
-                &nbsp;&nbsp;<button type="submit" class="btn btn-default">Connexion</button>
-            </g:form>
+                    <div class="form-group">
+                        <input type="text" name="login" class="form-control" placeholder="Login">&nbsp;&nbsp;
+                        <input type="password" name="mdp" class="form-control" placeholder="Mot de passe">
+                    </div>
+                    &nbsp;&nbsp;<button type="submit" class="btn btn-default">Connexion</button>
+                </g:form>
+            </g:if>
+            <g:else>
+                <g:form name="formDeconnexion" class="navbar-form navbar-right" url="[action:'deconnection',controller:'utilisateur']">
+                    <button type="submit" class="btn btn-default">Deconnexion</button>
+                </g:form>
+            </g:else>
+
+
 
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

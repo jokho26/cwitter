@@ -16,7 +16,7 @@ class UtilisateurController {
         ["user" : cwitter.Utilisateur.get(session["utilisateur"])]
     }
 
-    public static List<Utilisateur> getListeUtilisateursASuivre(int idUtilisateurSuiveur) {
+    public static List<Utilisateur> getListeUtilisateursASuivre(long idUtilisateurSuiveur) {
         Utilisateur utilisateurSuiveur = Utilisateur.get(idUtilisateurSuiveur);
         List<Utilisateur> listeUtilisateurASuivre = Utilisateur.getAll().clone();
         listeUtilisateurASuivre.removeAll(utilisateurSuiveur.getUtilisateursSuivis());
@@ -111,5 +111,11 @@ class UtilisateurController {
         }
 
 
+    }
+
+    def deconnection() {
+        session["utilisateur"] = null;
+        session["estConnecte"] = false;
+        redirect(uri: "/", params: [messageErreur: "Deconnexion réussie."]);
     }
 }
