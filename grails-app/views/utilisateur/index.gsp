@@ -6,7 +6,9 @@
 </head>
 
 <body>
-Bienvenue sur Cwitter
+<h1>Bienvenue sur Cwitter</h1>
+<br>
+<img src="${assetPath(src: 'cwitter.png')}">
 
 
 </body>

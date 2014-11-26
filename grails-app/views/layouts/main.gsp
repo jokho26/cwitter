@@ -28,6 +28,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+            <img src="${assetPath(src: 'cwitter-ico.png')}">
             <a class="navbar-brand" href="#">Cwitter</a>
         </div>
 
