@@ -39,7 +39,6 @@ class UtilisateurController {
 
     def inscription() {
         String actionForm = params.get("actionForm");
-        System.out.println("=========>" + actionForm);
 
         if (actionForm != null && actionForm.equals("creerUtilisateur")) {
 
@@ -66,8 +65,8 @@ class UtilisateurController {
             // On créer l'utilisateur
             Utilisateur user = new Utilisateur(login: login, password: mdp, nom: nom, prenom: prenom).save(flush: true, failOnError: true)
 
-            // TODO connexion et rediriger vers son mur
-            //redirect( action: "index", params: [id: params.get(user.getId())])
+            // Redirection vers la connexion
+            redirect( action: "connection", params: [login:login, mdp:mdp])
         }
     }
 
@@ -89,12 +88,16 @@ class UtilisateurController {
             return;
         }
 
-        mdp = DigestUtils.shaHex(this.password);
+        mdp = DigestUtils.shaHex(user.password);
 
         if(mdp.equals(user.getPassword())){
             session["utilisateur"] = user.getId();
             session["estConnecte"] = true;
             redirect(uri: "/mur", params: [messageErreur: "Connexion réussie."]);
+        }
+        else {
+            redirect(uri: "/", params: [messageErreur: "Mot de passe incorrect."]);
+            return;
         }
 
 
