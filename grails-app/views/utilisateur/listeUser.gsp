@@ -16,7 +16,7 @@
 Nombre d'utilisateur : ${cwitter.Utilisateur.count}<br>
 <ul>
     <g:each var="user" in="${cwitter.Utilisateur.all}">
-        <li>${user.nom} ${user.prenom} - <g:link controller="utilisateur" id="${user.id}">${user.messages.size()} message(s)</g:link></li>
+        <li>${user.nom} ${user.prenom} - <g:link controller="utilisateur" id="${user.id}" action="mur">${user.messages.size()} message(s)</g:link></li>
     </g:each>
 </ul>
 </body>

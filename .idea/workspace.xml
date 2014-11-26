@@ -29,31 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <file leaf-file-name="UtilisateurController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-              <caret line="8" column="72" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74725276" vertical-offset="867" max-vertical-offset="1734">
-              <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mur.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/mur.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3061223" vertical-offset="114" max-vertical-offset="697">
-              <caret line="22" column="134" selection-start-line="22" selection-start-column="134" selection-end-line="22" selection-end-column="134" />
+            <state vertical-scroll-proportion="0.5866261" vertical-offset="1592" max-vertical-offset="2057">
+              <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -62,18 +42,8 @@
       <file leaf-file-name="monMur.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7346939" vertical-offset="459" max-vertical-offset="833">
-              <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-70.95652" vertical-offset="0" max-vertical-offset="2040">
-              <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+            <state vertical-scroll-proportion="-3.9183674" vertical-offset="505" max-vertical-offset="833">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,20 +69,20 @@
         <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Message.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/cwitter/UserHomeController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/userHome/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/utilisateur/listeUser.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Groupe.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/gestionUser.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/connexion.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Utilisateur.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/inscription.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/mur.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/utilisateur/listeUser.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       </list>
     </option>
   </component>
@@ -653,7 +623,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48183000" />
+    <option name="totallyTimeSpent" value="50389000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -677,7 +647,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -695,7 +665,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2545317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3213703" sideWeight="0.88066465" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3213703" sideWeight="0.88066465" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -827,13 +797,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="833">
           <caret line="37" column="143" selection-start-line="37" selection-start-column="143" selection-end-line="37" selection-end-column="143" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="663">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1046,14 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="408">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../S8/Web/Projet/InstaMiam/web/inscription-content.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42" vertical-offset="108" max-vertical-offset="527">
@@ -1066,28 +1021,6 @@
         <state vertical-scroll-proportion="-1.4782609" vertical-offset="0" max-vertical-offset="204">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7755103" vertical-offset="0" max-vertical-offset="306">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8163266" vertical-offset="257" max-vertical-offset="646">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeUser.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.244898" vertical-offset="0" max-vertical-offset="476">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1110,22 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7346939" vertical-offset="459" max-vertical-offset="833">
-          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-70.95652" vertical-offset="0" max-vertical-offset="2040">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
@@ -1142,10 +1059,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeUser.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2244897" vertical-offset="148" max-vertical-offset="476">
+          <caret line="18" column="101" selection-start-line="18" selection-start-column="101" selection-end-line="18" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7755103" vertical-offset="0" max-vertical-offset="306">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/message/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74725276" vertical-offset="867" max-vertical-offset="1734">
+        <state vertical-scroll-proportion="-37.923077" vertical-offset="153" max-vertical-offset="1734">
           <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3897436" vertical-offset="1" max-vertical-offset="408">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9183674" vertical-offset="505" max-vertical-offset="833">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5866261" vertical-offset="1592" max-vertical-offset="2057">
+          <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
           <folding />
         </state>
       </provider>
