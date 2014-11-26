@@ -15,7 +15,8 @@ class BootStrap {
         Random r = new Random();
 
         for (Utilisateur u : Utilisateur.all) {
-            int nombreMessage = r.nextInt(10);
+            // On créer entre 2 et 7 messages par utilisateur
+            int nombreMessage = r.nextInt(5)+2;
             for (int i = 0; i < nombreMessage; i++) {
                 new Message(text: "Message " + i, user: u).save()
             }
