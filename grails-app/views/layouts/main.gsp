@@ -24,16 +24,37 @@
 	</head>
 <body>
 
+<nav class="navbar navbar-inverse"" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Cwitter</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <g:form name="formConnexion" class="navbar-form navbar-right" url="[action:'connection',controller:'utilisateur']">
+
+                <div class="form-group">
+                    <input type="text" name="login" class="form-control" placeholder="Login">&nbsp;&nbsp;
+                    <input type="password" name="mdp" class="form-control" placeholder="Mot de passe">
+                </div>
+                &nbsp;&nbsp;<button type="submit" class="btn btn-default">Connexion</button>
+            </g:form>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
 <div id="wrapper">
+
+
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    Cwitter home
-                </a>
-            </li>
+
             <li>
                 <a href="#">C'est</a>
             </li>
