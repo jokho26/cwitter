@@ -43,9 +43,9 @@ class UtilisateurController {
 
         // Verification que les champs sont bien remplis, sinon redirection
         if (nom == null || nom.equals("") ||
-            prenom == null || prenom.equals("") ||
-            mdp == null || mdp.equals("") ||
-            login == null || login.equals("")) {
+                prenom == null || prenom.equals("") ||
+                mdp == null || mdp.equals("") ||
+                login == null || login.equals("")) {
             redirect(uri: "/inscription", params: [messageErreur: "Champs vide. Veuillez remplir tout le formulaire"]);
             return;
         }
@@ -61,5 +61,19 @@ class UtilisateurController {
 
         // TODO connexion et rediriger vers son mur
         //redirect( action: "index", params: [id: params.get(user.getId())])
+    }
+
+
+    def connection() {
+
+        String mdp = params.get("mdp");
+        String login = params.get("login");
+
+        if(mdp == null || mdp.equals("") || login == null || login.equals("")){
+            redirect(uri: "/", params: [messageErreur: "Champs vide."]);
+            return;
+        }
+
+        Utilisateur user = Utilisateu
     }
 }

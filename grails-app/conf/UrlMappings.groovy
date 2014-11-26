@@ -13,5 +13,6 @@ class UrlMappings {
         "/home_user/$id" (controller: 'utilisateur', action: 'index')
         "/listeDetaillee" (view:"/utilisateur/listeDetaillee")
         "/inscription" (view:"/utilisateur/inscription")
+        "/connexion" (view:"/utilisateur/connexion")
 	}
 }
