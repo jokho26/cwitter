@@ -105,6 +105,8 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="cwitter-grailsPlugins" />
+    <orderEntry type="library" name="grails-2.4.4" level="application" />
+    <orderEntry type="module" module-name="Cwitter-grailsPlugins" />
   </component>
 </module>
 

@@ -12,6 +12,10 @@ class UtilisateurController {
         ["user" : cwitter.Utilisateur.get(params.get("id"))]
     }
 
+    def monMur() {
+        ["user" : cwitter.Utilisateur.get(session["utilisateur"])]
+    }
+
     public static List<Utilisateur> getListeUtilisateursASuivre(Utilisateur utilisateurSuiveur) {
         List<Utilisateur> listeUtilisateurASuivre = Utilisateur.getAll().clone();
         listeUtilisateurASuivre.removeAll(utilisateurSuiveur.getUtilisateursSuivis());

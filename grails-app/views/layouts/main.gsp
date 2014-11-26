@@ -54,17 +54,18 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            ==>${session["estConnecte"]}
-
+            <g:if test="${!session["estConnecte"]}">
                 <li>
                     <g:link controller="utilisateur" action="inscription">Inscription</g:link>
                 </li>
-
+            </g:if>
+            <g:else>
+               <li>
+                   <g:link controller="utilisateur" action="monMur">Mon mur</g:link>
+               </li>
+            </g:else>
             <li>
-                <a href="#">Oune</a>
-            </li>
-            <li>
-                <a href="#">SANDALE</a>
+                <g:link controller="utilisateur" action="listeUser">Liste des utilisateurs</g:link>
             </li>
         </ul>
     </div>

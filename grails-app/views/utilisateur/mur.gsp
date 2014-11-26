@@ -16,29 +16,21 @@ Messages de l'utilisateur :
     </g:each>
 </ul>
 <br><br><br>
-Utilisateurs que vous suivez :
+Utilisateurs que ${user.nom} ${user.prenom} suit :
 <br>
 <ul>
     <g:each var="u" in="${user.utilisateursSuivis}">
-        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}">${u.messages.size()} message(s)</g:link> <g:link controller="utilisateur" action="plusSuivre" params="[idSuiveur: user.id, idSuivi:u.id]">-</g:link></li></li>
+        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}" action="mur">${u.messages.size()} message(s)</g:link></li></li>
     </g:each>
 </ul>
 <br><br><br>
-Utilisateurs qui vous suivent :
+Utilisateurs qui suivent ${user.nom} ${user.prenom} :
 <br>
 <ul>
     <g:each var="u" in="${user.utilisateursSuiveurs}">
-        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}">${u.messages.size()} message(s)</g:link></li>
+        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}" action="mur">${u.messages.size()} message(s)</g:link></li>
     </g:each>
 </ul>
-<br><br><br>
-Suivre une nouvelle personne :
-<ul>
-    <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user)}">
-        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" action="suivre" params="[idSuiveur: user.id, idSuivi:u.id]">+</g:link></li>
-    </g:each>
-</ul>
-
 
 </body>
 </html>
