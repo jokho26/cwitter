@@ -24,7 +24,7 @@
 	</head>
 <body>
 
-<nav class="navbar navbar-inverse"" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -87,7 +87,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" id="main">
                 <div class="col-lg-12">
                     <g:layoutBody/>
                 </div>

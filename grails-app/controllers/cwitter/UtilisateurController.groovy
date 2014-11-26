@@ -80,7 +80,7 @@ class UtilisateurController {
         suiveur.removeFromUtilisateursSuivis(suivi).save(flush: true, failOnError: true)
         suivi.removeFromUtilisateursSuiveurs(suiveur).save(flush: true, failOnError: true)
 
-        redirect( action: "mur", params: [id: params.get("idSuiveur")])
+        redirect(action: "monMur", controller: "utilisateur", params: [id: suiveur.getId()]);
     }
 
     def inscription() {

@@ -38,7 +38,12 @@
         <div class="col-md-3">
             <ul class="list-group">
                 <g:each var="u" in="${user.utilisateursSuivis}">
-                    <a href='/Cwitter/utilisateur/mur?id=${u.getId()}' class="list-group-item"><span class="badge">${u.messages.size()}</span>${u.nom} ${u.prenom}</a>
+                    <li class="list-group-item">
+                        <a href='/Cwitter/utilisateur/mur?id=${u.getId()}'>${u.nom} ${u.prenom}</a>
+                        <span class="badge">${u.messages.size()} messages</span>
+                        <span class="badge badgeLien" onclick="document.location.href='/Cwitter/utilisateur/plusSuivre?idSuiveur=${user.id}&idSuivi=${u.id}'">Ne plus suivre</span>
+                    </li>
+
                 </g:each>
             </ul>
         </div>

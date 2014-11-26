@@ -12,3 +12,10 @@
 *= require_self
 */
 
+#main{
+    margin-top: 40px;
+}
+
+.badgeLien{
+    cursor: pointer;
+}
