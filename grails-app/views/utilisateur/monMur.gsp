@@ -6,46 +6,68 @@
 </head>
 
 <body>
-<b>${user.nom} ${user.prenom} - Mon mur</b>
-<br><br>
-Mes messages :
-<br>
-<ul>
-    <g:each var="message" in="${user.messages}">
-        <li>${message.text}</li>
-    </g:each>
-</ul>
-<br>
-<g:form name="myForm" url="[action:'nouveauMessage',controller:'utilisateur']">
-    <label>Nouveau message : </label><br/><input type="text" name="message" class="form-control" value="" required placeholder="Nouveau Message ..."><br/>
-    <div class="btn_valider">
-        <input class="btn btn-default" type="submit" value="Poster" />
-    </div>
-</g:form>
-<br><br><br>
-Utilisateurs que vous suivez :
-<br>
-<ul>
-    <g:each var="u" in="${user.utilisateursSuivis}">
-        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}" action="mur">${u.messages.size()} message(s)</g:link> <g:link controller="utilisateur" action="plusSuivre" params="[idSuiveur: user.id, idSuivi:u.id]">-</g:link></li></li>
-    </g:each>
-</ul>
-<br><br><br>
-Utilisateurs qui vous suivent :
-<br>
-<ul>
-    <g:each var="u" in="${user.utilisateursSuiveurs}">
-        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" id="${u.id}">${u.messages.size()} message(s)</g:link></li>
-    </g:each>
-</ul>
-<br><br><br>
-Suivre une nouvelle personne :
-<ul>
-    <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user.getId())}">
-        <li>${u.nom} ${u.prenom} - <g:link controller="utilisateur" action="suivre" params="[idSuiveur: user.id, idSuivi:u.id]">+</g:link></li>
-    </g:each>
-</ul>
 
+    <h1>${user.nom} ${user.prenom}</h1>
+    <br>
+    <h2>Mes messages :</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <g:each var="message" in="${user.messages}">
+                    <li class="list-group-item">${message.text}</li>
+                </g:each>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <g:form name="myForm" url="[action:'nouveauMessage',controller:'utilisateur']">
+                <label>Nouveau message : </label><br/><input type="text" name="message" class="form-control" value="" required placeholder="Nouveau Message ..."><br/>
+                <div class="btn_valider">
+                    <input class="btn btn-default" type="submit" value="Poster" />
+                </div>
+            </g:form>
+        </div>
+    </div>
+    <br><br>
+    <h2>Utilisateurs que vous suivez :</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <g:each var="u" in="${user.utilisateursSuivis}">
+                    <a href='/Cwitter/utilisateur/mur?id=${u.getId()}' class="list-group-item"><span class="badge">${u.messages.size()}</span>${u.nom} ${u.prenom}</a>
+                </g:each>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <h2>Utilisateurs qui vous suivent :</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <g:each var="u" in="${user.utilisateursSuiveurs}">
+                    <a href='/Cwitter/utilisateur/mur?id=${u.getId()}' class="list-group-item"><span class="badge">${u.messages.size()}</span>${u.nom} ${u.prenom}</a>
+                </g:each>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <h2>Suivre une nouvelle personne :</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user.getId())}">
+                    <a href='/Cwitter/utilisateur/suivre?idSuiveur=${user.id}&idSuivi=${u.id}' class="list-group-item">Suivre ${u.nom} ${u.prenom}</a>
+                </g:each>
+            </ul>
+        </div>
+    </div>
 
 </body>
+
 </html>
