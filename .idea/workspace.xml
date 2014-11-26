@@ -42,8 +42,18 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.061225" vertical-offset="0" max-vertical-offset="833">
+            <state vertical-scroll-proportion="-6.979592" vertical-offset="151" max-vertical-offset="833">
               <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listeDetaillee.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4285715" vertical-offset="0" max-vertical-offset="646">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -69,24 +79,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UtilisateurController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UtilisateurController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5156695" vertical-offset="856" max-vertical-offset="1207">
+            <state vertical-scroll-proportion="-7.869565" vertical-offset="856" max-vertical-offset="1207">
               <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utilisateur.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Utilisateur.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/cwitter/Utilisateur.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9375" vertical-offset="86" max-vertical-offset="476">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.54867256" vertical-offset="222" max-vertical-offset="561">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -120,8 +130,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/connexion.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/inscription.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Utilisateur.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Utilisateur.groovy" />
       </list>
     </option>
   </component>
@@ -621,12 +632,12 @@
       <workItem from="1416382849274" duration="9186000" />
       <workItem from="1416401342802" duration="7792000" />
       <workItem from="1416812874069" duration="7446000" />
-      <workItem from="1416986526860" duration="3208000" />
+      <workItem from="1416986526860" duration="3634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39345000" />
+    <option name="totallyTimeSpent" value="39771000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -957,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="663">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/message/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
@@ -1005,10 +1008,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.061225" vertical-offset="0" max-vertical-offset="833">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="50" />
+        <state vertical-scroll-proportion="-7.869565" vertical-offset="856" max-vertical-offset="1207">
+          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1021,21 +1024,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.979592" vertical-offset="151" max-vertical-offset="833">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeDetaillee.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4285715" vertical-offset="0" max-vertical-offset="646">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/cwitter/Utilisateur.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9375" vertical-offset="86" max-vertical-offset="476">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5156695" vertical-offset="856" max-vertical-offset="1207">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.54867256" vertical-offset="222" max-vertical-offset="561">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>

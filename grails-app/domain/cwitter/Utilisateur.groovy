@@ -1,5 +1,7 @@
 package cwitter
 
+import org.apache.commons.codec.digest.DigestUtils
+
 class Utilisateur {
 
     String nom
@@ -17,6 +19,9 @@ class Utilisateur {
         nom blank: false, nullable: false
         prenom blank: false, nullable: false
         login size: 1..15, blank: false, nullable: false
-        password size: 1..15, blank: false, nullable: false
+    }
+
+    def beforeInsert() {
+        this.password = DigestUtils.shaHex(this.password)
     }
 }
