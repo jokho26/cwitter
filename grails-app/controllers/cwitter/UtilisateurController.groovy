@@ -4,17 +4,54 @@ import org.apache.commons.codec.digest.DigestUtils
 
 class UtilisateurController {
 
-    def index() {
+    def mur() {
         ["user" : cwitter.Utilisateur.get(params.get("id"))]
     }
 
-    def mur() {
-        ["user" : cwitter.Utilisateur.get(params.get("id"))]
+
+    def modifierUtilisateur() {
+        Utilisateur user = cwitter.Utilisateur.get(session["utilisateur"]);
+
+        String nom = params.get("nom");
+        String prenom = params.get("prenom");
+        String mdp = params.get("mdp");
+
+        boolean isModifie = false;
+
+        if (nom != null && !nom.equals("")) {
+            if (!user.getNom().equals(nom)) {
+                user.setNom(nom)
+                isModifie = true;
+            }
+        }
+        if (prenom != null && !prenom.equals("")) {
+            if (!user.getPrenom().equals(prenom)) {
+                user.setPrenom(prenom)
+                isModifie = true;
+            }
+        }
+        if (mdp != null && !mdp.equals("")) {
+            mdp = DigestUtils.shaHex(mdp);
+            if (!user.getPassword().equals(mdp)) {
+                user.setPassword(mdp)
+                isModifie = true;
+            }
+
+        }
+
+        if (isModifie) {
+            user.save(flush: true, failOnError: true)
+            redirect(action: "monMur", controller: "utilisateur", params: [id: user.getId()]);
+        }
+        else {
+            ["userAModifier" : user]
+        }
     }
 
     def monMur() {
         ["user" : cwitter.Utilisateur.get(session["utilisateur"])]
     }
+
 
     public static List<Utilisateur> getListeUtilisateursASuivre(long idUtilisateurSuiveur) {
         Utilisateur utilisateurSuiveur = Utilisateur.get(idUtilisateurSuiveur);
@@ -128,4 +165,7 @@ class UtilisateurController {
 
         redirect(action: "monMur", controller: "utilisateur", params: [id: session["utilisateur"]]);
     }
+
+
+
 }

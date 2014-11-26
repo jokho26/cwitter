@@ -23,7 +23,5 @@
     </div>
 </g:form>
 
-
-
 </body>
 </html>
