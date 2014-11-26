@@ -7,7 +7,9 @@
 
 <body>
 <center><h1>Inscription</h1></center>
-
+<g:if test="${params.get("messageErreur") != null}">
+    <b>${params.get("messageErreur")}</b><br><br><br>
+</g:if>
 <br>
 <g:form name="myForm" url="[action:'inscription',controller:'utilisateur']">
     <label>Login : </label><br/><input type="text" name="login" class="form-control" value="" required><br/>
