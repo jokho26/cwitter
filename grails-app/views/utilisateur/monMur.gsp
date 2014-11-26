@@ -15,6 +15,13 @@ Mes messages :
         <li>${message.text}</li>
     </g:each>
 </ul>
+<br>
+<g:form name="myForm" url="[action:'nouveauMessage',controller:'utilisateur']">
+    <label>Nouveau message : </label><br/><input type="text" name="message" class="form-control" value="" required placeholder="Nouveau Message ..."><br/>
+    <div class="btn_valider">
+        <input class="btn btn-default" type="submit" value="Poster" />
+    </div>
+</g:form>
 <br><br><br>
 Utilisateurs que vous suivez :
 <br>

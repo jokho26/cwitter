@@ -118,4 +118,14 @@ class UtilisateurController {
         session["estConnecte"] = false;
         redirect(uri: "/", params: [messageErreur: "Deconnexion réussie."]);
     }
+
+    def nouveauMessage() {
+        String message = params.get("message");
+
+        if (message != null && !message.equals("")) {
+            Message m = new Message(text: message, user: Utilisateur.get(session["utilisateur"])).save()
+        }
+
+        redirect(action: "monMur", controller: "utilisateur", params: [id: session["utilisateur"]]);
+    }
 }
