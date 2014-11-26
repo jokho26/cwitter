@@ -12,8 +12,11 @@ class BootStrap {
         Utilisateur u3 = new Utilisateur(login: "user3", password: "user3", nom: "Iggy", prenom: "Pop").save(flush: true, failOnError: true)
         Utilisateur u4 = new Utilisateur(login: "user4", password: "user4", nom: "Young", prenom: "Angus").save(flush: true, failOnError: true)
 
+        Random r = new Random();
+
         for (Utilisateur u : Utilisateur.all) {
-            for (int i = 0; i < 5; i++) {
+            int nombreMessage = r.nextInt(10);
+            for (int i = 0; i < nombreMessage; i++) {
                 new Message(text: "Message " + i, user: u).save()
             }
         }
