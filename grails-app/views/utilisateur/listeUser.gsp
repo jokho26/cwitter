@@ -13,11 +13,16 @@
 </head>
 
 <body>
-Nombre d'utilisateur : ${cwitter.Utilisateur.count}<br>
-<ul>
-    <g:each var="user" in="${cwitter.Utilisateur.all}">
-        <li>${user.nom} ${user.prenom} - <g:link controller="utilisateur" id="${user.id}" action="mur">${user.messages.size()} message(s)</g:link></li>
-    </g:each>
-</ul>
+
+    <h2>Nombre d'utilisateurs : ${cwitter.Utilisateur.count}</h2><br><br>
+    <div class="col-md-3">
+        <ul class="list-group">
+
+            <g:each var="user" in="${cwitter.Utilisateur.all}">
+                <a href='/Cwitter/utilisateur/mur?id=${user.getId()}' class="list-group-item"><span class="badge">${user.messages.size()}</span>${user.nom} ${user.prenom}</a>
+            </g:each>
+
+        </ul>
+    </div>
 </body>
 </html>
