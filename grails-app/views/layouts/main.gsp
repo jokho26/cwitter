@@ -54,10 +54,12 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
+            ==>${session["estConnecte"]}
 
-            <li>
-                <g:link controller="utilisateur" action="inscription">Inscription</g:link>
-            </li>
+                <li>
+                    <g:link controller="utilisateur" action="inscription">Inscription</g:link>
+                </li>
+
             <li>
                 <a href="#">Oune</a>
             </li>

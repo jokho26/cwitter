@@ -8,6 +8,10 @@ class UtilisateurController {
         ["user" : cwitter.Utilisateur.get(params.get("id"))]
     }
 
+    def mur() {
+        ["user" : cwitter.Utilisateur.get(params.get("id"))]
+    }
+
     public static List<Utilisateur> getListeUtilisateursASuivre(Utilisateur utilisateurSuiveur) {
         List<Utilisateur> listeUtilisateurASuivre = Utilisateur.getAll().clone();
         listeUtilisateurASuivre.removeAll(utilisateurSuiveur.getUtilisateursSuivis());
@@ -24,7 +28,7 @@ class UtilisateurController {
         suiveur.addToUtilisateursSuivis(suivi).save(flush: true, failOnError: true)
         suivi.addToUtilisateursSuiveurs(suiveur).save(flush: true, failOnError: true)
 
-         redirect( action: "index", params: [id: params.get("idSuiveur")])
+         redirect( action: "mur", params: [id: params.get("idSuiveur")])
     }
 
     def plusSuivre() {
@@ -34,7 +38,7 @@ class UtilisateurController {
         suiveur.removeFromUtilisateursSuivis(suivi).save(flush: true, failOnError: true)
         suivi.removeFromUtilisateursSuiveurs(suiveur).save(flush: true, failOnError: true)
 
-        redirect( action: "index", params: [id: params.get("idSuiveur")])
+        redirect( action: "mur", params: [id: params.get("idSuiveur")])
     }
 
     def inscription() {
@@ -88,12 +92,13 @@ class UtilisateurController {
             return;
         }
 
-        mdp = DigestUtils.shaHex(user.password);
+        mdp = DigestUtils.shaHex(mdp);
 
         if(mdp.equals(user.getPassword())){
             session["utilisateur"] = user.getId();
             session["estConnecte"] = true;
-            redirect(uri: "/mur", params: [messageErreur: "Connexion réussie."]);
+
+            redirect(action: "mur", controller: "utilisateur", params: [id: user.getId()]);
         }
         else {
             redirect(uri: "/", params: [messageErreur: "Mot de passe incorrect."]);
