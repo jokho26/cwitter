@@ -16,7 +16,6 @@
     <label>Mot de passe : </label><br/><input type="password" name="mdp" class="form-control" value="" required><br />
     <label>Nom : </label><br/><input type="text" name="nom" class="form-control" value="" required><br />
     <label>Prénom : </label><br/><input type="text" name="prenom" class="form-control" value="" required><br />
-    <input type="hidden" name="actionForm" value="creerUtilisateur"/>
     <div class="btn_valider">
         <input class="btn btn-default" type="submit" value="Valider" />
     </div>
