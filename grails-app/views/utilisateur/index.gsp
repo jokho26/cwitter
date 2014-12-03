@@ -6,9 +6,15 @@
 </head>
 
 <body>
+<center>
 <h1>Bienvenue sur Cwitter</h1>
 <br>
+<g:if test="${params.get("messageErreur") != null}">
+    <b>${params.get("messageErreur")}</b><br><br><br>
+</g:if>
+<br>
 <img src="${assetPath(src: 'cwitter.png')}">
+</center>
 
 
 </body>
