@@ -18,9 +18,9 @@ class UtilisateurController {
             listeMessagesActu.addAll(userSuivi.getMessages());
         }
 
-        listeMessagesActu = listeMessageActu.sort(new MessageDateComparator());
+        listeMessagesActu.sort(new MessageDateComparator());
 
-        redirect(action: "actualite", controller: "utilisateur", params: [messages: listeMessagesActu]);
+        request.setAttribute("messages", listeMessagesActu)
     }
 
     def modifierUtilisateur() {
@@ -84,7 +84,7 @@ class UtilisateurController {
         suiveur.addToUtilisateursSuivis(suivi).save(flush: true, failOnError: true)
         suivi.addToUtilisateursSuiveurs(suiveur).save(flush: true, failOnError: true)
 
-         redirect( action: "mur", params: [id: params.get("idSuiveur")])
+         redirect( action: "monMur")
     }
 
     def plusSuivre() {
@@ -94,7 +94,7 @@ class UtilisateurController {
         suiveur.removeFromUtilisateursSuivis(suivi).save(flush: true, failOnError: true)
         suivi.removeFromUtilisateursSuiveurs(suiveur).save(flush: true, failOnError: true)
 
-        redirect(action: "monMur", controller: "utilisateur", params: [id: suiveur.getId()]);
+        redirect( action: "monMur")
     }
 
     def inscription() {

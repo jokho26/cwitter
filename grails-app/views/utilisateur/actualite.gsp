@@ -12,7 +12,7 @@
         <div class="col-md-3">
             <ul class="list-group">
                 <g:each var="message" in="${messages}">
-                    <li class="list-group-item">${message.text}</li>
+                    <li class="list-group-item">${message.text} {message.date}</li>
                 </g:each>
             </ul>
         </div>

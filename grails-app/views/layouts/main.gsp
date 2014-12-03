@@ -70,9 +70,12 @@
                 </li>
             </g:if>
             <g:else>
-               <li>
-                <g:link controller="utilisateur" action="monMur">Mon mur</g:link>
-            </li>
+                <li>
+                    <g:link controller="utilisateur" action="monMur">Mon mur</g:link>
+                </li>
+                <li>
+                    <g:link controller="utilisateur" action="actualite">Actualité</g:link>
+                </li>
                 <li>
                     <g:link controller="utilisateur" action="modifierUtilisateur">Modifier mon compte</g:link>
                 </li>
