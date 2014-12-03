@@ -17,7 +17,7 @@
                             <a href='/Cwitter/utilisateur/mur?id=${message.user.getId()}' >${message.user.nom} ${message.user.prenom}</a> : ${message.text}
                         </div>
                         <div class="col-md-2">
-                            <span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span>
+                            <span class="badge"><g:formatDate format="dd/MM/yyyy HH:mm" date="${message.date}"/></span>
                         </div>
                         <br>
                     </li>

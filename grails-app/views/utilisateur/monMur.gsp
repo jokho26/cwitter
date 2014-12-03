@@ -20,7 +20,7 @@
                             ${message.text}
                         </div>
                         <div class="col-md-2">
-                            <span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span>
+                            <span class="badge"><g:formatDate format="dd/MM/yyyy HH:mm" date="${message.date}"/></span>
                         </div>
                         <div class="col-md-1">
                             <span class="glyphicon glyphicon-remove-circle badgeLien" style="color: #ff484b;" aria-hidden="true" onclick="document.location.href='/Cwitter/utilisateur/supprimerMessage?idUtilisateur=${user.id}&idMessage=${message.id}'"></span>
@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-md-10">
             <g:form name="myForm" url="[action:'nouveauMessage',controller:'utilisateur']">
-                <label>Nouveau message : </label><br/><input type="text" name="message" class="form-control" value="" required placeholder="Nouveau Message ..."><br/>
+                <label>Nouveau message : </label><br/><input type="text" name="message" class="form-control" maxlength="140" value="" required placeholder="Nouveau Message ..."><br/>
                 <div class="btn_valider">
                     <input class="btn btn-default" type="submit" value="Poster" />
                 </div>
