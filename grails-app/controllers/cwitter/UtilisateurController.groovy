@@ -149,11 +149,9 @@ class UtilisateurController {
      */
     def supprimerMessage() {
         Utilisateur utilisateur = Utilisateur.get(params.get("idUtilisateur"))
-        Message m = Message.get(params.get("idMessage"))
 
         // Suppression du message
-        utilisateur.removeFromMessages(m).save(flush: true, failOnError: true)
-        //m.delete(flush: true);
+        utilisateur.removeFromMessages(Message.get(params.get("idMessage"))).save(flush: true, failOnError: true)
 
         // Redirection vers le mur de l'utilisateur
         redirect( action: "monMur")

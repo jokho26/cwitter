@@ -24,4 +24,6 @@ class Utilisateur {
     def beforeInsert() {
         this.password = DigestUtils.shaHex(this.password)
     }
+
+    static mapping = {messages cascade: 'all-delete-orphan'}
 }
