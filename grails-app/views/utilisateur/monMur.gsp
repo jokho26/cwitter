@@ -15,7 +15,10 @@
         <div class="col-md-3">
             <ul class="list-group">
                 <g:each var="message" in="${user.messages}">
-                    <li class="list-group-item">${message.text}</li>
+                    <li class="list-group-item">
+                        ${message.text}
+                        <span class="badge">27/05</span>
+                    </li>
                 </g:each>
             </ul>
         </div>
