@@ -144,6 +144,22 @@ class UtilisateurController {
     }
 
     /**
+     * Méthode invoquée lorsque l'utilisateur veut supprimer un message
+     * @return
+     */
+    def supprimerMessage() {
+        Utilisateur utilisateur = Utilisateur.get(params.get("idUtilisateur"))
+        Message m = Message.get(params.get("idMessage"))
+
+        // Suppression du message
+        utilisateur.removeFromMessages(m).save(flush: true, failOnError: true)
+        //m.delete(flush: true);
+
+        // Redirection vers le mur de l'utilisateur
+        redirect( action: "monMur")
+    }
+
+    /**
      * Méthode invoquée lors de l'inscription d'un utilisateur
      * @return
      */
