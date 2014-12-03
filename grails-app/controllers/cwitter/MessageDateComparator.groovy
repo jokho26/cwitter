@@ -1,5 +1,8 @@
 package cwitter
 
+/**
+ * Comparateur de messages en fonction de la date de ceux-ci.
+ */
 class MessageDateComparator implements Comparator<Message> {
 
     public int compare(Message m1, Message m2) {
