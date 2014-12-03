@@ -17,7 +17,7 @@
                 <g:each var="message" in="${user.messages}">
                     <li class="list-group-item">
                         ${message.text}
-                        <span class="badge">27/05</span>
+                        <span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span>
                     </li>
                 </g:each>
             </ul>
