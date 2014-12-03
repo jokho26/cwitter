@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-3">
             <ul class="list-group">
-                <g:each var="message" in="${user.messages}">
+                <g:each var="message" in="${messages}">
                     <li class="list-group-item">${message.text}</li>
                 </g:each>
             </ul>

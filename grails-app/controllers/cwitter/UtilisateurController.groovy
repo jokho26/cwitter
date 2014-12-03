@@ -10,7 +10,17 @@ class UtilisateurController {
 
     def actualite() {
         Utilisateur user = cwitter.Utilisateur.get(session["utilisateur"]);
-        redirect(action: "actualite", controller: "utilisateur", params: [user: user]);
+
+        //Création de la liste des messages des personnes que je suit, triée par date
+        ArrayList<Message> listeMessagesActu = new ArrayList<Message>() {};
+
+        for (Utilisateur userSuivi : user.getUtilisateursSuivis()) {
+            listeMessagesActu.addAll(userSuivi.getMessages());
+        }
+
+        listeMessagesActu = listeMessageActu.sort(new MessageDateComparator());
+
+        redirect(action: "actualite", controller: "utilisateur", params: [messages: listeMessagesActu]);
     }
 
     def modifierUtilisateur() {
