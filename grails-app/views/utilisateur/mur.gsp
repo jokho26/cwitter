@@ -14,7 +14,7 @@
     <div class="col-md-3">
         <ul class="list-group">
             <g:each var="message" in="${user.messages}">
-                <li class="list-group-item">${message.text}<span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span></li>
+                <li class="list-group-item" style="overflow:auto;">${message.text}<span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span></li>
             </g:each>
         </ul>
     </div>

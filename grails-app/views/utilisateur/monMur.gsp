@@ -12,12 +12,20 @@
     <h2>Mes messages :</h2>
     <br>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-5">
             <ul class="list-group">
                 <g:each var="message" in="${user.messages}">
-                    <li class="list-group-item">
-                        ${message.text}
-                        <span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span>
+                    <li class="list-group-item" style="overflow:auto;">
+                        <div class="col-md-9">
+                            ${message.text}
+                        </div>
+                        <div class="col-md-2">
+                            <span class="badge"><g:formatDate format="dd/MM/yyyy" date="${message.date}"/></span>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-remove-circle badgeLien" style="color: #ff484b;" aria-hidden="true" onclick="document.location.href='/Cwitter/utilisateur/supprimerMessage?idUtilisateur=${user.id}&idMessage=${message.id}'"></span>
+                        </div>
+                        <br>
                     </li>
                 </g:each>
             </ul>
