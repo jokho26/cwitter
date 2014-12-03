@@ -28,6 +28,7 @@ class UtilisateurController {
         for (Utilisateur userSuivi : user.getUtilisateursSuivis()) {
             listeMessagesActu.addAll(userSuivi.getMessages());
         }
+        listeMessagesActu.addAll(user.getMessages());
 
         // Tris par date
         listeMessagesActu.sort(new MessageDateComparator());

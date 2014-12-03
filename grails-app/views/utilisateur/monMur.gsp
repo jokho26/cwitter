@@ -12,7 +12,7 @@
     <h2>Mes messages :</h2>
     <br>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-10">
             <ul class="list-group">
                 <g:each var="message" in="${user.messages}">
                     <li class="list-group-item" style="overflow:auto;">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-10">
             <g:form name="myForm" url="[action:'nouveauMessage',controller:'utilisateur']">
                 <label>Nouveau message : </label><br/><input type="text" name="message" class="form-control" value="" required placeholder="Nouveau Message ..."><br/>
                 <div class="btn_valider">
@@ -46,7 +46,7 @@
     <h2>Utilisateurs que vous suivez :</h2>
     <br>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-10">
             <ul class="list-group">
                 <g:each var="u" in="${user.utilisateursSuivis}">
                     <li class="list-group-item">
@@ -63,10 +63,10 @@
     <h2>Utilisateurs qui vous suivent :</h2>
     <br>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-10">
             <ul class="list-group">
                 <g:each var="u" in="${user.utilisateursSuiveurs}">
-                    <a href='/Cwitter/utilisateur/mur?id=${u.getId()}' class="list-group-item"><span class="badge">${u.messages.size()}</span>${u.nom} ${u.prenom}</a>
+                    <a href='/Cwitter/utilisateur/mur?id=${u.getId()}' class="list-group-item"><span class="badge">${u.messages.size()} messages</span>${u.nom} ${u.prenom}</a>
                 </g:each>
             </ul>
         </div>
@@ -75,7 +75,7 @@
 
     <h2>Suivre une nouvelle personne :</h2>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-6">
             <ul class="list-group">
                 <g:each var="u" in="${cwitter.UtilisateurController.getListeUtilisateursASuivre(user.getId())}">
                     <a href='/Cwitter/utilisateur/suivre?idSuiveur=${user.id}&idSuivi=${u.id}' class="list-group-item">Suivre ${u.nom} ${u.prenom}</a>

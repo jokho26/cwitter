@@ -15,11 +15,11 @@
 <body>
 
     <h2>Nombre d'utilisateurs : ${cwitter.Utilisateur.count}</h2><br><br>
-    <div class="col-md-3">
+    <div class="col-md-10">
         <ul class="list-group">
 
             <g:each var="user" in="${cwitter.Utilisateur.all}">
-                <a href='/Cwitter/utilisateur/mur?id=${user.getId()}' class="list-group-item"><span class="badge">${user.messages.size()}</span>${user.nom} ${user.prenom}</a>
+                <a href='/Cwitter/utilisateur/mur?id=${user.getId()}' class="list-group-item"><span class="badge">${user.messages.size()} messages</span>${user.nom} ${user.prenom}</a>
             </g:each>
 
         </ul>
