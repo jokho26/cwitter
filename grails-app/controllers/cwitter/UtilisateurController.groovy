@@ -8,6 +8,10 @@ class UtilisateurController {
         ["user" : cwitter.Utilisateur.get(params.get("id"))]
     }
 
+    def actualite() {
+        Utilisateur user = cwitter.Utilisateur.get(session["utilisateur"]);
+        redirect(action: "actualite", controller: "utilisateur", params: [user: user]);
+    }
 
     def modifierUtilisateur() {
         Utilisateur user = cwitter.Utilisateur.get(session["utilisateur"]);
@@ -165,6 +169,7 @@ class UtilisateurController {
 
         redirect(action: "monMur", controller: "utilisateur", params: [id: session["utilisateur"]]);
     }
+
 
 
 

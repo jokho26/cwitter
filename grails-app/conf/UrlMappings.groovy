@@ -15,5 +15,6 @@ class UrlMappings {
         "/mur" (view:"/utilisateur/mur")
         "/utilisateur/listeUser" (view:"/utilisateur/listeUser")
         "/utilisateur/modifierUtilisateur" (controller: 'utilisateur', action: 'modifierUtilisateur')
+        "/actualite" (controller: 'utilisateur', action: 'actualite')
 	}
 }
