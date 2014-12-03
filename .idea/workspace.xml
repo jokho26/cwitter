@@ -32,18 +32,8 @@
       <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="442">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actualite.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/actualite.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3119266" vertical-offset="51" max-vertical-offset="476">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -52,15 +42,19 @@
       <file leaf-file-name="UtilisateurController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9565217" vertical-offset="652" max-vertical-offset="1241">
-              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+            <state vertical-scroll-proportion="-1.5208334" vertical-offset="437" max-vertical-offset="850">
+              <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
               <folding>
+                <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
                 <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+                <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+                <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
                 <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+                <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+                <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
                 <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
                 <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
                 <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-                <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -69,28 +63,31 @@
       <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="935">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <file leaf-file-name="Message.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/cwitter/Message.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="1054" max-vertical-offset="2006">
-              <caret line="76" column="81" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
+            <state vertical-scroll-proportion="-4.0" vertical-offset="12" max-vertical-offset="340">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageDateComparator.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/MessageDateComparator.groovy">
+      <file leaf-file-name="monMur.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.43312103" vertical-offset="340" max-vertical-offset="1462">
+              <caret line="28" column="87" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -122,17 +119,17 @@
         <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Utilisateur.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/mur.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/inscription.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/listeUser.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/modifierUtilisateur.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Message.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/cwitter/DateComparator.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/utilisateur/actualite.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/cwitter/Message.groovy" />
       </list>
     </option>
   </component>
@@ -699,7 +696,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64703000" />
+    <option name="totallyTimeSpent" value="66073000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -779,7 +776,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -792,12 +789,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1619" max-vertical-offset="1972">
           <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -834,12 +835,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1513" max-vertical-offset="2346">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -873,12 +878,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1836">
           <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -904,12 +913,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="731">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -996,12 +1009,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="204">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1034,12 +1051,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="204">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1117,14 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="952">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/listeUser.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5866261" vertical-offset="79" max-vertical-offset="561">
@@ -1175,17 +1188,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/cwitter/Message.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625" vertical-offset="50" max-vertical-offset="408">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3324468" vertical-offset="1932" max-vertical-offset="8534">
@@ -1194,10 +1196,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/actualite.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="442">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.0816326" vertical-offset="51" max-vertical-offset="476">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1210,14 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="935">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846" vertical-offset="1054" max-vertical-offset="2006">
@@ -1226,25 +1220,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cwitter/UtilisateurController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9565217" vertical-offset="652" max-vertical-offset="1241">
-          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+        <state vertical-scroll-proportion="-1.5208334" vertical-offset="437" max-vertical-offset="850">
+          <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
           <folding>
+            <element signature="n#!!block;n#actualite#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#modifierUtilisateur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#monMur#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#getListeUtilisateursASuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#suivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
+            <element signature="n#!!block;n#plusSuivre#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#inscription#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#connection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
             <element signature="n#!!block;n#deconnection#0;n#!!block;n#UtilisateurController#0" expanded="false" />
-            <element signature="n#!!block;n#nouveauMessage#0;n#!!block;n#UtilisateurController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/actualite.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3119266" vertical-offset="51" max-vertical-offset="476">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cwitter/Message.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0" vertical-offset="12" max-vertical-offset="340">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/utilisateur/monMur.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43312103" vertical-offset="340" max-vertical-offset="1462">
+          <caret line="28" column="87" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="87" />
           <folding />
         </state>
       </provider>

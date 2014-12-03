@@ -174,10 +174,10 @@ class UtilisateurController {
         String message = params.get("message");
 
         if (message != null && !message.equals("")) {
-            Message m = new Message(text: message, user: Utilisateur.get(session["utilisateur"])).save()
+            new Message(text: message, user: Utilisateur.get(session["utilisateur"]), date: new Date()).save(flush: true,  failOnError: true)
         }
 
-        redirect(action: "monMur", controller: "utilisateur", params: [id: session["utilisateur"]]);
+        redirect(action: "monMur", controller: "utilisateur");
     }
 
 

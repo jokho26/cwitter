@@ -18,7 +18,11 @@ class BootStrap {
             // On créer entre 2 et 7 messages par utilisateur
             int nombreMessage = r.nextInt(5)+2;
             for (int i = 0; i < nombreMessage; i++) {
-                new Message(text: "Message " + i, user: u).save()
+                // On espace chaque message par une heure
+                Calendar c = Calendar.getInstance();
+                c.set(Calendar.HOUR_OF_DAY, c.get(Calendar.HOUR_OF_DAY) + i)
+
+                new Message(text: "Message " + i, user: u, date: c.getTime()).save()
             }
         }
 

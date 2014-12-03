@@ -11,8 +11,4 @@ class Message {
     static constraints = {
         text size: 0..140, blank: false
     }
-
-    def beforeInsert() {
-        this.date = new Date();
-    }
 }
